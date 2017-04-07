@@ -1,0 +1,26 @@
+.home {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.link-to-single-page:hover {
+  cursor: pointer;
+}
+
+.pipe {
+  padding-top: 10px;
+}
+
+a {
+  color: forestgreen;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+img {
+  max-width: 400px;
+  max-height: 500px;
+}

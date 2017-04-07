@@ -1,0 +1,20 @@
+.content {
+  padding-left: 5px;
+}
+
+.members-solo {
+  height: 80vh;
+}
+
+h2 {
+  padding-top: 15px;
+}
+
+img {
+  max-width: 70vw;
+  max-height: 50vh;
+}
+
+p {
+  margin-top: 15px;
+}

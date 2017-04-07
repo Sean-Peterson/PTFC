@@ -1,12 +1,18 @@
-<h5>Filter the team by role with the club or by name or <a (click)="displayAll()">display all</a></h5>
-<input #desiredSearchFilter>
-<button (click)="searchToLower(desiredSearchFilter.value)"> search </button>
-<div class="members" (click)="goToMemberPage(member)" *ngFor="let member of members | async | search:desiredSearch">
-  <br>
-  <h2>{{member.firstName}} {{member.lastName}}</h2>
-  <p>
-    {{member.role}} <br>
-    {{member.bio}}
-  </p>
-  <img src="{{member.image}}"/>
+<div class="home">  
+  <div class="pipe">
+    <h5>Search through the team by role or by first or last name <a (click)="displayAll()">display all</a></h5>
+    <input #desiredSearchFilter>
+    <button (click)="searchToLower(desiredSearchFilter.value)"> search </button>
+  </div>
+  <div class="members" *ngFor="let member of members | async | search:desiredSearch">
+    <br>
+    <h2>{{member.firstName}} {{member.lastName}}</h2>
+    <p>
+      {{member.role}}
+    </p>
+    <img class="link-to-single-page" (click)="goToMemberPage(member)" src="{{member.image}}"/>
+    <p>
+      {{member.bio}}
+    </p>
+  </div>
 </div>
