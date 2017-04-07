@@ -1,5 +1,5 @@
-<div class="members" (click)="goToMemberPage(member)" *ngFor="let member of members | async">
-  <img src="{{member.image}}">
+<div class="members" (click)="goToMemberPage(member)" *ngFor="let member of members | async | role:desiredRole">
+  
   <h2>{{member.firstName}} {{member.lastName}}</h2>
   <p>
     {{member.role}} <br>
