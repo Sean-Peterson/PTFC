@@ -29,6 +29,12 @@ export class RolePipe implements PipeTransform {
           output.push(input[i]);
         }
       }
+      for (var i = 0; i < input.length; i++) {
+        var fullName = input[i].firstName + ' ' + input[i].lastName;
+        if (fullName.toLowerCase() == search) {
+          output.push(input[i]);
+        }
+      }
       return output;
     }
   }
