@@ -1,11 +1,14 @@
-<div class="nav-bar">
-  <a href="/">home</a>
-  <a href="about">about</a>
-  <a href="admin">admin</a>
+<div class="row header">
+  <img id="left" src="http://logos-download.com/wp-content/uploads/2016/05/Portland_Timbers_logo_emblem_MLS.png"/>
+  <img id="right" src="http://logos-download.com/wp-content/uploads/2016/05/Portland_Timbers_logo_emblem_MLS.png"/>
+  <h1 routerLink=''> <span id="title">Portland Timbers</span></h1>
 </div>
-
-<h1 routerLink=''>Portland Timbers</h1>
 
 <div class="display">
   <router-outlet></router-outlet>
+</div>
+
+<div class="footer">
+  <a class="text-muted" href="admin">admin</a>
+  <a id="about" class="text-muted" href="about">about</a>
 </div>

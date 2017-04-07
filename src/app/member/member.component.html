@@ -1,8 +1,8 @@
 <div class="members-solo" *ngFor="let member of members">
-  <h1>{{member.firstName}} {{member.lastName}}</h1>
-  <h3>{{member.role}}</h3>
+  <h2>{{member.role}}</h2>
+  <h3>{{member.firstName}} {{member.lastName}}</h3>
+  <img id="member-img" src="{{member.image}}"/>
   <p>
     {{member.bio}}
   </p>
-  <img src="{{member.image}}"/>
 </div>
