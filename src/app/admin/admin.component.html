@@ -1,5 +1,5 @@
 <div class="edit-players">
-
+  <h3>Edit your members:</h3>
   <div *ngFor="let member of members | async" class="edit-form panel panel-default col-md-3">
 
     <div class="panel-heading">
@@ -33,43 +33,47 @@
 
 <br>
 
-<div class="new-member panel panel-default col-md-12">
+<div class="add-member col-md-12">
+  <h3>Add New Member:</h3>
+  <div class="new-member panel panel-default">
 
-  <div class="panel-heading">
-    <h3 class="panel-title">Add a new member</h3>
-  </div>
+    <div class="panel-heading">
+      <h3 class="panel-title">Add a new member</h3>
+    </div>
 
-  <div class="panel-body">
-
-    <div>
-
-      <div>
-        <label>First Name:</label>
-        <br>
-        <input class='form-control' #newFirstName>
-      </div>
+    <div class="panel-body">
 
       <div>
-        <label>Last Name:</label>
+
+        <div>
+          <label>First Name:</label>
+          <br>
+          <input class='form-control' #newFirstName>
+        </div>
+
+        <div>
+          <label>Last Name:</label>
+          <br>
+          <input class='form-control' #newLastName>
+        </div>
+
+        <div>
+          <label>Role at the club</label>
+          <br>
+          <input class='form-control' #newRole>
+        </div>
+
+        <div>
+          <label>Bio</label>
+          <br>
+          <input class='form-control' #newBio>
+        </div>
+
         <br>
-        <input class='form-control' #newLastName>
+
+        <button class='btn' (click)="submitForm(newFirstName.value, newLastName.value, newRole.value, newBio.value); newFirstName.value=''; newLastName.value=''; newRole.value=''; newBio.value=''">Add New Member</button>
+
       </div>
-
-      <div>
-        <label>Role at the club</label>
-        <br>
-        <input class='form-control' #newRole>
-      </div>
-
-      <div>
-        <label>Bio</label>
-        <br>
-        <input class='form-control' #newBio>
-      </div>
-
-      <br>
-
-      <button class='btn' (click)="submitForm(newFirstName.value, newLastName.value, newRole.value, newBio.value); newFirstName.value=''; newLastName.value=''; newRole.value=''; newBio.value=''">Add New Member</button>
 
     </div>
 
