@@ -20,15 +20,16 @@ export class MemberService {
   }
 
   updateMember(localUpdatedMember){
-    var memberEntryInFirebase = this.getMemberById(localUpdatedMember.$key);
-    console.log(memberEntryInFirebase);
-    memberEntryInFirebase.update({
-      firstName: localUpdatedMember.firstName,
-      lastName: localUpdatedMember.lastName,
-      role: localUpdatedMember.role,
-      bio: localUpdatedMember.bio
-    });
-
+    if (localUpdatedMember.firstName != '' && localUpdatedMember.lastName != '' && localUpdatedMember.role != '' && localUpdatedMember.bio != ''){
+      var memberEntryInFirebase = this.getMemberById(localUpdatedMember.$key);
+      console.log(memberEntryInFirebase);
+      memberEntryInFirebase.update({
+        firstName: localUpdatedMember.firstName,
+        lastName: localUpdatedMember.lastName,
+        role: localUpdatedMember.role,
+        bio: localUpdatedMember.bio
+      });
+    }
   }
 
   deleteMember(localMemberToDelete){

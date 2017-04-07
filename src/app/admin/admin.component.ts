@@ -20,9 +20,13 @@ export class AdminComponent implements OnInit {
   }
 
   submitForm(firstName: string, lastName: string, role: string, bio: string, ) {
-    var newMember: Member = new Member(firstName, lastName, role, bio);
-    this.memberService.addMember(newMember);
-    this.router.navigateByUrl('/');
+    if (firstName != '' && lastName != '' && role != '' && bio != '') {
+      var newMember: Member = new Member(firstName, lastName, role, bio);
+      this.memberService.addMember(newMember);
+      this.router.navigateByUrl('/');
+    } else {
+      alert("Please provide values for all fields");
+    }
   }
 
   submitUpdate(memberToUpdate) {
