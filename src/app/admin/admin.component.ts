@@ -19,9 +19,9 @@ export class AdminComponent implements OnInit {
     this.members = this.memberService.getMembers()
   }
 
-  submitForm(firstName: string, lastName: string, role: string, bio: string, ) {
-    if (firstName != '' && lastName != '' && role != '' && bio != '') {
-      var newMember: Member = new Member(firstName, lastName, role, bio);
+  submitForm(firstName: string, lastName: string, role: string, bio: string, image: string ) {
+    if (firstName != '' && lastName != '' && role != '' && bio != '' && image != '') {
+      var newMember: Member = new Member(firstName, lastName, role, bio, image);
       this.memberService.addMember(newMember);
       this.router.navigateByUrl('/');
     } else {

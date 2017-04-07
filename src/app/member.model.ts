@@ -1,3 +1,3 @@
 export class Member {
-  constructor( public firstName: string, public lastName: string, public role: string, public bio: string ){ }
+  constructor( public firstName: string, public lastName: string, public role: string, public bio: string, public image: string){ }
 }

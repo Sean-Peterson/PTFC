@@ -18,9 +18,14 @@
 
       <label>Role:</label>
       <input class="form-control" [(ngModel)]="member.role">
+      <br>
 
       <label>Bio:</label>
       <input class="form-control" [(ngModel)]="member.bio">
+      <br>
+
+      <label>Image:</label>
+      <input class="form-control" [(ngModel)]="member.image">
       <br>
 
       <button class='btn' (click)="submitUpdate(member)">Update</button>
@@ -69,9 +74,15 @@
           <input class='form-control' #newBio>
         </div>
 
+        <div>
+          <label>Image</label>
+          <br>
+          <input class='form-control' #newImage>
+        </div>
+
         <br>
 
-        <button class='btn' (click)="submitForm(newFirstName.value, newLastName.value, newRole.value, newBio.value); newFirstName.value=''; newLastName.value=''; newRole.value=''; newBio.value=''">Add New Member</button>
+        <button class='btn' (click)="submitForm(newFirstName.value, newLastName.value, newRole.value, newBio.value, newImage.value); newFirstName.value=''; newLastName.value=''; newRole.value=''; newBio.value=''; newImage.value=''">Add New Member</button>
 
       </div>
 

@@ -20,14 +20,15 @@ export class MemberService {
   }
 
   updateMember(localUpdatedMember){
-    if (localUpdatedMember.firstName != '' && localUpdatedMember.lastName != '' && localUpdatedMember.role != '' && localUpdatedMember.bio != ''){
+    if (localUpdatedMember.firstName != '' && localUpdatedMember.lastName != '' && localUpdatedMember.role != '' && localUpdatedMember.bio != '' && localUpdatedMember.image != ''){
       var memberEntryInFirebase = this.getMemberById(localUpdatedMember.$key);
       console.log(memberEntryInFirebase);
       memberEntryInFirebase.update({
         firstName: localUpdatedMember.firstName,
         lastName: localUpdatedMember.lastName,
         role: localUpdatedMember.role,
-        bio: localUpdatedMember.bio
+        bio: localUpdatedMember.bio,
+        image: localUpdatedMember.image
       });
     }
   }
