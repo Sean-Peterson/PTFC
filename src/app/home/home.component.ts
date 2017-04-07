@@ -23,6 +23,13 @@ export class HomeComponent implements OnInit {
     this.router.navigate(['member', clickedMember.$key]);
   }
 
-  desiredRole: string = "all";
+  desiredSearch: string = "all";
 
+  searchToLower (search) {
+    this.desiredSearch = search.toLowerCase();
+  }
+
+  displayAll() {
+    this.desiredSearch = "all";
+  }
 }

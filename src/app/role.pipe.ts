@@ -2,20 +2,30 @@ import {Pipe, PipeTransform} from '@angular/core';
 import { Member } from './member.model';
 
 @Pipe({
-  name: "role",
+  name: "search",
   pure: false
 })
 
 
 export class RolePipe implements PipeTransform {
-  transform(input: Member[], role){
+  transform(input: Member[], search){
     if (input) {
       var output: Member[] = [];
-      if (role === 'all') {
+      if (search === 'all') {
         return input;
       }
       for (var i = 0; i < input.length; i++) {
-        if (input[i].role == role) {
+        if (input[i].role.toLowerCase() == search) {
+          output.push(input[i]);
+        }
+      }
+      for (var i = 0; i < input.length; i++) {
+        if (input[i].firstName.toLowerCase() == search) {
+          output.push(input[i]);
+        }
+      }
+      for (var i = 0; i < input.length; i++) {
+        if (input[i].lastName.toLowerCase() == search) {
           output.push(input[i]);
         }
       }
