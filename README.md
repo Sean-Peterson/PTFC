@@ -6,6 +6,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 4/7/17
 
+navigate to [PTFC](https://ptfc-dbccf.firebaseapp.com/) homepage
+
 ## Prerequisites
 
 You will need the following properly installed on your computer.
