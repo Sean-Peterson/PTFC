@@ -1,6 +1,18 @@
-# Ptfc
+# PTFC (Portland Timbers Football Club)
+
+PTFC is the result from an Epicodus solo project designed to test my ability to create a site using angular 2 with persistent data from Firebas.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+
+4/7/17
+
+## Prerequisites
+
+You will need the following properly installed on your computer.
+
+* [Git](https://git-scm.com/)
+* [Node.js](https://nodejs.org/) (with NPM)
+* [Angular CLI](https://ember-cli.com/)
 
 ## Development server
 
@@ -63,9 +75,17 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
     * Develop custom style
 
   5. Polish
-    * Refactor minor portion of app.component.html, food-display.component.html
+    * Refactor minor portion of home.component, member.component
     * Delete unused code
     * Make README awesome
+
+## Technologies Used
+  * **HTML**: Hypertext Markup Language, a standardized system for tagging text files to achieve font, color, graphic, and hyperlink effects on World Wide Web pages.
+  * **CSS**: The Cascading Style Sheets Specification is a computer language that is used to write formatting instructions.
+  * **JavaScipt**: An object-oriented computer programming language commonly used to create interactive effects within web browsers.
+  * **Angular2**: Angular2 is a JavaScript framework for creating web applications.
+  * **Typescript**: Typescript is a free and open-source programming language developed and maintained by Microsoft. It is a strict superset of JavaScript, and adds optional static typing and class-based object-oriented programming to the language.
+  * **npm**: A NodeJS package manager. You can use it to install node programs. Also, if you use it in development, it makes it easier to specify and link dependencies.
 
 ## Further help
 
