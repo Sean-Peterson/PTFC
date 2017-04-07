@@ -42,12 +42,12 @@ Javascript week 5 Independent project
   How am I going to go about completing this project?
 
     create a model
+    create service to communicate with database
     get firebase connected
     create a homepage component
     create an "admin" component
     create router
     link admin on homepage
-    create service to communicate with database
     inject service to admin
     create function to add new person to database from admin component
     create method to grab information from service
