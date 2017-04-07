@@ -1,3 +1,8 @@
-<p>
-  home works!
-</p>
+<div class="members" *ngFor="let member of members | async">
+  <img src="{{member.image}}">
+  <h2>{{member.firstName}} {{member.lastName}}</h2>
+  <p>
+    {{member.role}} <br>
+    {{member.bio}}
+  </p>
+</div>
