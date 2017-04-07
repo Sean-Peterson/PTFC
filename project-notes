@@ -9,7 +9,7 @@ Javascript week 5 Independent project
       completion: FALSE
 
     As a user, I'd like the option to VISIT an ABOUT PAGE that explains what the club is, and what they do.
-      completion: FALSE
+      completion: TRUE
 
     As a user, I'd like all data persisted in a DATABASE, so it's always there when I need it.
       completion: TRUE
@@ -21,10 +21,10 @@ Javascript week 5 Independent project
       completion: TRUE
 
     As an ADMINISTRATOR, I want to EDIT user profiles, in case I make a mistake, or need to UPDATE their details.
-      completion: FALSE
+      completion: TRUE
 
     As an ADMINISTRATOR, I need the option to DELETE a user, in case they leave the club or team.
-      completion: FALSE
+      completion: TRUE
 
 
 
