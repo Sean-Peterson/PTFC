@@ -13,6 +13,7 @@ You will need the following properly installed on your computer.
 * [Git](https://git-scm.com/)
 * [Node.js](https://nodejs.org/) (with NPM)
 * [Angular CLI](https://ember-cli.com/)
+* [Bower](https://bower.io/)
 
 ## Development server
 
@@ -86,6 +87,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
   * **Angular2**: Angular2 is a JavaScript framework for creating web applications.
   * **Typescript**: Typescript is a free and open-source programming language developed and maintained by Microsoft. It is a strict superset of JavaScript, and adds optional static typing and class-based object-oriented programming to the language.
   * **npm**: A NodeJS package manager. You can use it to install node programs. Also, if you use it in development, it makes it easier to specify and link dependencies.
+  * **bower**: bower js is used for managing front end components like html, css, js etc.
 
 ## Further help
 
