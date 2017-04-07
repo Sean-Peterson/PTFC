@@ -6,7 +6,7 @@ Javascript week 5 Independent project
       completion: TRUE
 
     As a user, I'd like to CLICK club MEMBER's entry IN THE LIST to visit THEIR PROFILE PAGE, which should include more DETAILS about them.
-      completion: FALSE
+      completion: TRUE
 
     As a user, I'd like the option to VISIT an ABOUT PAGE that explains what the club is, and what they do.
       completion: TRUE
