@@ -1,4 +1,39 @@
-<div class="new-dream panel panel-default">
+<div class="edit-players">
+
+  <div *ngFor="let member of members | async" class="edit-form panel panel-default col-md-3">
+
+    <div class="panel-heading">
+      <h4 class="panel-title">Edit {{member.firstName}} {{member.lastName}}</h4>
+    </div>
+
+    <div class="panel-body">
+
+      <label>First Name:</label>
+      <input class="form-control" [(ngModel)]="member.firstName">
+      <br>
+
+      <label>Last Name:</label>
+      <input class="form-control" [(ngModel)]="member.lastName">
+      <br>
+
+      <label>Role:</label>
+      <input class="form-control" [(ngModel)]="member.role">
+
+      <label>Bio:</label>
+      <input class="form-control" [(ngModel)]="member.bio">
+      <br>
+
+      <button class='btn' (click)="submitUpdate(member)">Update</button>
+      <button class='btn' (click)="beginDeletingMember(member)">Delete</button>
+    </div>
+
+  </div>
+
+</div>
+
+<br>
+
+<div class="new-member panel panel-default col-md-12">
 
   <div class="panel-heading">
     <h3 class="panel-title">Add a new member</h3>
